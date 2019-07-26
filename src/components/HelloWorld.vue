@@ -1,12 +1,16 @@
 <template>
   <div>
-    <main id="main"></main>
+    <main id="main">
+
+    </main>
 
     <nav id="nav-wrap">
-      <a href="#" id="nav-logo">
-        MINI
-        <br />TIMELINE
-      </a>
+
+      <div class="logo">
+        <a href="#" id="nav-logo">
+          <img src="../assets/logo.png" alt="MINI Timeline">
+        </a>
+      </div>
 
       <div class="nav-content g1">
         <ul>
@@ -75,13 +79,20 @@ export default {};
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 #nav-wrap {
-  float: left;
   width: 20vw;
   height: 100vh;
   position: fixed;
-}
+  background: #e6e6e6;
 
-.g1 {
+  .logo {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 40%, rgba(230,230,230,1) 90%);
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .g1 {
   display: flex;
 
   ul {
@@ -91,12 +102,16 @@ export default {};
     li {
       background: #3995d5;
       text-align: center;
-      padding: 15px;
+      padding: 5px;
+      cursor: pointer;
       a {
         text-decoration: none;
         font-size: 1.3em;
         color: #fff;
         font-weight: bold;
+      }
+      &:hover {
+        background: darken(#3995d5, 10);
       }
     }
   }
@@ -112,12 +127,15 @@ export default {};
     li {
       background: #105fa2;
       text-align: center;
-      padding: 15px;
+      padding: 5px;
       a {
         text-decoration: none;
         font-size: 1.3em;
         color: #fff;
         font-weight: bold;
+      }
+      &:hover {
+        background: darken(#105fa2, 10);
       }
     }
   }
@@ -133,12 +151,15 @@ export default {};
     li {
       background: #3C5264;
       text-align: center;
-      padding: 15px;
+      padding: 5px;
       a {
         text-decoration: none;
         font-size: 1.3em;
         color: #fff;
         font-weight: bold;
+      }
+      &:hover {
+        background: darken(#3C5264, 10);
       }
     }
   }
@@ -154,14 +175,19 @@ export default {};
     li {
       background: #C24044;
       text-align: center;
-      padding: 15px;
+      padding: 5px;
       a {
         text-decoration: none;
         font-size: 1.3em;
         color: #fff;
         font-weight: bold;
       }
+      &:hover {
+        background: darken(#C24044, 10);
+      }
     }
   }
 }
+}
+
 </style>
