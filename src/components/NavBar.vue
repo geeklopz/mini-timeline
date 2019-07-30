@@ -63,6 +63,7 @@ export default {
   height: 100vh;
   position: fixed;
   background: #e6e6e6;
+  z-index: 50;
 
   .logo {
     background: rgb(255, 255, 255);

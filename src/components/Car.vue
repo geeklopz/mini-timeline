@@ -11,7 +11,7 @@
       </div>
 
       <div class="slider">
-        <h2>Slider Car Model</h2>
+        <Slider></Slider>
       </div>
 
       <div class="menu-car">
@@ -38,8 +38,11 @@
 </template>
 
 <script>
+import Slider from './components/Slider'
+
 export default {
-  name: "Car"
+  name: "Car",
+  components: { Slider }
 };
 </script>
 
@@ -56,9 +59,9 @@ export default {
     align-items: center;
     position: sticky;
     top: 0;
-    width: 100%;
     height: 104px;
     color: #707070;
+    background: #FFF;
     h1 {
       font-size: 5em;
       font-weight: 900;
@@ -79,6 +82,7 @@ export default {
 
   /* Slider */
   .slider {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,7 +95,7 @@ export default {
 
   /* Menu Car Model */
   .menu-car {
-    padding: 0 50px;
+    padding: 0 40px;
     margin-bottom: 50px;
     ul {
       display: flex;
@@ -114,9 +118,9 @@ export default {
 
   /* Section */
   section {
-    width: calc(100vw - 18vw);
     padding: 0 20px;
   }
+
 }
 </style>
 

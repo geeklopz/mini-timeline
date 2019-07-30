@@ -15,7 +15,7 @@ export default {
 <style lang="scss" scoped>
 .main {
   margin-left: 18vw;
-  overflow-y: scroll auto;
+  overflow-y: scroll;
   width: calc(100vw - 18vw);
   height: 100%;
 
