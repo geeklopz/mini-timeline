@@ -64,6 +64,7 @@ export default {
   position: fixed;
   background: #e6e6e6;
   z-index: 50;
+  transition: all 0.3s ease;
 
   .logo {
     background: rgb(255, 255, 255);
@@ -75,6 +76,12 @@ export default {
     padding: 20px 0;
     display: flex;
     justify-content: center;
+
+    img {
+      @media screen and (max-width: 480px) {
+        width: 55px;
+      }
+    }
   }
 
   .nav-content {
@@ -96,6 +103,10 @@ export default {
         padding: 5px 0;
         display: inline-block;
         width: 100%;
+
+        @media screen and (max-width: 480px) {
+          font-size: 1em;
+        }
       }
     }
 

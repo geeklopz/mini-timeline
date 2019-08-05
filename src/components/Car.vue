@@ -68,6 +68,10 @@ export default {
     color: #707070;
     background: #FFF;
 
+    @media screen and (max-width: 480px) {
+      height: 70px;
+    }
+
     /* Styled */
     box-shadow: 0 1px 4px 0 rgba(192, 208, 230, 0.8);
     border-bottom: 10px solid rgba(230, 236, 245, 0.3);
@@ -75,28 +79,49 @@ export default {
     h1 {
       font-size: 5em;
       font-weight: 900;
+
+      @media screen and (max-width: 480px) {
+        font-size: 2em;
+      }
     }
     .date {
       margin-right: 20px;
       padding: 0;
       font-size: 1em;
+
+      @media screen and (max-width: 480px) {
+        margin-right: 5px;
+        font-size: .6em;
+      }
     }
     .models {
       margin-left: 20px;
+
+      @media screen and (max-width: 480px) {
+        margin-left: 5px;
+      }
+
       p {
         padding: 0;
         font-size: 1em;
+
+        @media screen and (max-width: 480px) {
+          font-size: .6em;
+        }
       }
     }
   }
 
-  /* Slider */
   .slider {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 450px;
+
+    @media screen and (max-width: 480px) {
+      height: 200px;
+    }
   }
 
   /* Menu Car Model */
@@ -105,12 +130,22 @@ export default {
     margin-bottom: 50px;
     border-bottom: 2px solid rgba(230, 236, 245, 0.3);
 
+    @media screen and (max-width: 480px) {
+      padding: 0 5px;
+      margin-bottom: 20px;
+    }
+
     ul {
       display: flex;
       justify-content: space-between;
+      width: 100%;
+
       li {
         list-style-type: none;
         padding: 6px 15px;
+        @media screen and (max-width: 480px) {
+          padding: 6px 5px;
+        }
         a {
           text-decoration: none;
           color: #707070;
@@ -119,6 +154,9 @@ export default {
           &.active {
             font-weight: 700;
             border-bottom: 8px solid rgba(230, 236, 245, 0.9);
+          }
+          @media screen and (max-width: 480px) {
+            font-size: .7em;
           }
         }
       }
@@ -130,9 +168,17 @@ export default {
     margin-bottom: 50px;
     padding: 0 20px;
 
+    @media screen and (max-width: 480px) {
+      padding: 0 10px;
+    }
+
     p {
       margin: 10px 0;
       font-size: .9em;
+
+      @media screen and (max-width: 480px) {
+        font-size: .7em;
+      }
     }
 
   }
